@@ -1,8 +1,9 @@
 FROM alpine:latest
-MAINTAINER leafney "babycoolzx@126.com"
+MAINTAINER David "davidota@github.com"
 
 RUN apk update && \
 	apk add mysql mysql-client && \
+	apk add vim && \
 	addgroup mysql mysql && \
 	mkdir /scripts && \
 	rm -rf /var/cache/apk/*
